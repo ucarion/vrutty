@@ -71,6 +71,11 @@
         width: 80%;
       }
 
+      #toplinks a {
+        text-decoration: none;
+        color: #34495E;
+      }
+
       .section-who {
         color: #FCFFFF;
         background-color: #AF523D;
@@ -106,8 +111,12 @@
         margin-bottom: 14px;
       }
 
-      .section-news .well {
-        background-color: #AF523D;
+      #row2 {
+        margin-top: 20px;
+      }
+
+      #reduce-img {
+        width: 200px;
       }
 
       #myCarousel {
@@ -151,6 +160,14 @@
         padding-bottom: 40px;
         background-color: #50545F;
       }
+
+      footer a {
+        text-decoration: none;
+      }
+
+      footer .copy {
+        margin-top: 10px;
+      }
     </style>
   </head>
   <body>
@@ -162,7 +179,13 @@
             <h2>\vr&uuml;-ty'\ <i>n.</i> 1. Hungarian onomatopoeic represention of a record scratching. 2. two guys with a passion for film.</h2>
           </div>
           <a id="main-btn" class="btn" href="#what-we-do">Learn more &raquo;</a>
-          <p>About us &mdash; Who we are &mdash; In the news</p>
+          <p id="toplinks">
+            <a href="#about">About us</a>
+            &mdash;
+            <a href="#who">Who we are</a>
+            &mdash;
+            <a href="#news">In the news</a>
+          </p>
         </div>
         <div class="span5">
           <img src="assets/img/vrutty-small.png" id="side-img" />
@@ -270,7 +293,7 @@
         </div>
       </div>
     </section>
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="container">
         <h1>About Us</h1>
         <img src="assets/img/adam_darian.jpg" />
@@ -295,7 +318,7 @@
         </div>
       </div>
     </section>
-    <section class="section-news">
+    <section class="section-news" id="news">
       <div class="container">
         <h1>In the News</h1>
         <div class="row">
@@ -305,41 +328,46 @@
             </a>
           </div>
           <div class="span4">
+            <a href="http://www.directingchange.org/directing-change-regional-winners/">
+              <img src="assets/img/dir_change.png" id="reduce-img">
+            </a>
+          </div>
+          <div class="span4">
             <a href="http://www.generalaviationnews.com/2011/05/scholarships-awarded-2/">
               <img src="assets/img/gan-hd.png">
             </a>
           </div>
-          <div class="span4">
+        </div>
+        <div class="row" id="row2">
+          <div class="span3">
             <a href="http://www.eeforum.net/Newsroom/News-Releases/Johnson-Controls-recognizes-students-for-green-pro">
               <img src="assets/img/logo-energy-efficiency.gif">
             </a>
           </div>
-        </div>
-        <div class="row">
-          <div class="span4">
+          <div class="span3">
             <a href="http://www.lajollalight.com/2011/07/02/news-and-notes-about-la-jolla-students-and-grads/">
               <img src="assets/img/la_jolla_light.jpg">
             </a>
           </div>
-          <div class="span4">
+          <div class="span3">
             <a href="http://www.johnsoncontrols.com.sa/content/sa/en/products/building_efficiency/building/k-12/igniting_creative.html">
               <img src="assets/img/creative_energy.png">
             </a>
           </div>
-          <div class="span4">
+          <div class="span3">
             <a href="http://www.ignitingcreativeenergy.org/portfolio/adam-hersko-ronatas-grades-9-12-grand-prize-winner/">
-              <img src="assets/img/johnson.gif">
+              <img src="assets/img/johnson.jpg">
             </a>
           </div>
-          <!-- <div class="span3">
-            <img src="http://www.directingchange.org/wp-content/themes/psa/images/center_image2.png">
-          </div> -->
         </div>
       </div>
     </section>
     <footer>
       <div class="container">
-        Footer text goes here...
+        <a href="mailto:vruttyproductions@gmail.com">Contact Us</a>
+        <div class="copy">
+          &copy; 2013 Vrutty Productions
+        </div>
       </div>
     </footer>
 
@@ -368,3 +396,4 @@
     </script>
   </body>
 </html>
+  
